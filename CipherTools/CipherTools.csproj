@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A501845-0F80-4902-A0BF-89C3E0558D39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CipherTools</RootNamespace>
+    <AssemblyName>CipherTools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Webalys-Kameleon.pics-Key.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutokeySolver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutokeySolver.Designer.cs">
+      <DependentUpon>AutokeySolver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brute.Designer.cs">
+      <DependentUpon>Brute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColTransposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColTransposition.Designer.cs">
+      <DependentUpon>ColTransposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindReplace.Designer.cs">
+      <DependentUpon>FindReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrequencyAnalysis.Designer.cs">
+      <DependentUpon>FrequencyAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndexOfCoincidence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndexOfCoincidence.Designer.cs">
+      <DependentUpon>IndexOfCoincidence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IofCOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IofCOutput.Designer.cs">
+      <DependentUpon>IofCOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapLetters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapLetters.Designer.cs">
+      <DependentUpon>MapLetters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Output.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Output.Designer.cs">
+      <DependentUpon>Output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PotentialAnswers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PotentialAnswers.Designer.cs">
+      <DependentUpon>PotentialAnswers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeeTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeTables.Designer.cs">
+      <DependentUpon>SeeTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stack.cs" />
+    <Compile Include="VigSolver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VigSolver.Designer.cs">
+      <DependentUpon>VigSolver.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutokeySolver.resx">
+      <DependentUpon>AutokeySolver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brute.resx">
+      <DependentUpon>Brute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColTransposition.resx">
+      <DependentUpon>ColTransposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindReplace.resx">
+      <DependentUpon>FindReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrequencyAnalysis.resx">
+      <DependentUpon>FrequencyAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndexOfCoincidence.resx">
+      <DependentUpon>IndexOfCoincidence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IofCOutput.resx">
+      <DependentUpon>IofCOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapLetters.resx">
+      <DependentUpon>MapLetters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Output.resx">
+      <DependentUpon>Output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PotentialAnswers.resx">
+      <DependentUpon>PotentialAnswers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SeeTables.resx">
+      <DependentUpon>SeeTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VigSolver.resx">
+      <DependentUpon>VigSolver.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\grid1.png" />
+    <EmbeddedResource Include="Resources\ROBOTOCONDENSED-LIGHT.TTF" />
+    <None Include="Resources\Screenshot_1.png" />
+    <None Include="Resources\Screenshot_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\english_bigrams.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Webalys-Kameleon.pics-Key.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
